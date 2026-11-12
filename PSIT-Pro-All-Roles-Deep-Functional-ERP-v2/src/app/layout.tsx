@@ -1,0 +1,1 @@
+import"./globals.css";import type{Metadata}from"next";export const metadata:Metadata={title:{default:"PSIT Pro",template:"%s | PSIT Pro"},description:"Fast personal productivity and workplace assistant platform"};export default function Layout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}

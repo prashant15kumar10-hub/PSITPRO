@@ -1,0 +1,2 @@
+import type { Config } from "tailwindcss";
+export default {darkMode:["class"],content:["./src/**/*.{ts,tsx}"],theme:{extend:{colors:{brand:"#e96921",brandDark:"#bd4d12",ink:"#27313d",canvas:"#f3f5f8",line:"#dfe3e8",muted:"#687386",navy:"#17324d",success:"#16845b",warning:"#c87908",danger:"#c83d3d",info:"#2474b5"},boxShadow:{panel:"0 1px 2px rgba(25,39,52,.06),0 5px 16px rgba(25,39,52,.05)"}}},plugins:[]} satisfies Config;

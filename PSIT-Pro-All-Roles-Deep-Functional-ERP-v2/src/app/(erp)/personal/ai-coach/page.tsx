@@ -1,0 +1,1 @@
+import{PageTitle}from"@/components/ui/core";import{PersonalAI}from"@/components/personal-ai";export default function Page(){return <><PageTitle title="AI Coach" subtitle="Private structured guidance across personal priorities and workplace commitments"/><PersonalAI/></>}

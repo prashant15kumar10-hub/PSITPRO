@@ -1,0 +1,57 @@
+{
+  "name": "psit-pro",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev --turbopack",
+    "build": "prisma generate && next build --webpack",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "prisma generate",
+    "db:push": "node scripts/safe-db-push.mjs",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "setup": "node scripts/setup.mjs --seed",
+    "setup:demo": "node scripts/setup.mjs --seed",
+    "setup:empty": "node scripts/setup.mjs",
+    "db:bootstrap": "tsx scripts/seed-portals.ts",
+    "predev": "node scripts/prepare-run.mjs",
+    "prestart": "node scripts/prepare-run.mjs",
+    "db:enum-fix": "node scripts/pre-push-enum-fix.mjs",
+    "db:push:prisma": "prisma db push"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.3",
+    "@radix-ui/react-dialog": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.0",
+    "bcryptjs": "^3.0.2",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.9.2",
+    "lucide-react": "^0.510.0",
+    "next": "16.3.6",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.65.0",
+    "recharts": "^3.6.0",
+    "tailwind-merge": "^3.3.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "prisma": "6.19.3",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "overrides": {
+    "deepmerge-ts": "8.0.0"
+  }
+}
